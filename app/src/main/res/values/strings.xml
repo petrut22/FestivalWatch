@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">FestivalWatch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_string">Login</string>
+    <string name="register_string">Register</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="description_string">Let\'s keep rocking!!!\nPlease enter your login credentials and call your friends \nto join us at music festivals</string>
+    <string name="description_register_string">Are you ready to rock out at some of the hottest music festivals around? \nIt\'s time to gather your friends and get ready for an unforgettable experience!</string>
+    <string name="emailString">Email</string>
+    <string name="usernameString">Username</string>
+    <string name="passwordString">Password</string>
+    <string name="phoneString">Phone Number</string>
+    <string name="locationString">Location</string>
+    <string name="nameString">Username</string>
+    <string name="createAccountString">Don\'t have an account?</string>
+    <string name="festivalInfoString">
+    Please note the following important points:\n\n
+    1. Ensure you have a stable internet connection before opening the festival mobile application.\n\n
+    2. Make sure your mobile device\'s screen is clean\n\n
+    3. In case of low battery, consider having a backup power source available to avoid any inconveniences.\n\n
+    Enjoy the festival, and thank you for using our mobile application!
+    </string>
+    <string name="festivalAbstract">
+    Music festivals have gained remarkable popularity over the years, but the Covid-19 pandemic imposed a sudden change, resulting in the\n cancellation or postponement of many of these events. However, with the relaxation of restrictions, a swift resumption of these events has\n  been observed, both locally and internationally, offering a broad variety of festivals covering diverse musical genres for all music fans.\n  Furthermore, the technological advancements and the introduction of Android and iOS devices in the market have had a significant impact on\n  the way festivals are managed and organized. The multitude of applications and features they offer to users has facilitated interaction with\n  social media and offered new opportunities for organizers and participants.\n
+    The main objective of this thesis is to propose a platform that provides users with the ability to access important information related to\n  the organization of a festival, as well as the possibility to purchase tickets through online transactions with a bank card. Additionally,\n  the application offers organizers the ability to plan a music festival by filling out certain fields with the necessary data and updating it\n  with new information in order to facilitate good organization and adaptability to the needs of the public.\n
+    </string>
+    <string name="signUptString">Sign up!</string>
+    <string name="festivalString">Festivals</string>
+    <string name="profileString">User Profile</string>
+    <string name="alreadyRegisteredString">Already registered?</string>
+    <string name="chooseFestivalString">Swipe up your festival</string>
+    <string name="profileMenuString">Let\'s see your profile</string>
+    <string name="vultureString">Theo Baiatul Vulture</string>
+    <string name="festivalTitleString">Add festival</string>
+    <string name="loginHereString">Login here</string>
+    <string name="joinFestivalString">Go</string>
+    <string name="nothingString"></string>
+    <string name="untoldString">Untold Festival este cel mai mare festival de muzica din Romania. Acesta se desfasoara an fiecare an pe stadionul Cluj Arena din Cluj Napoca.UNTOLD a fost, la prima editie, în 2015, cel mai premiat festival din lume. Best Major Festival 2015 si Brand of the Year 2015au fost doar doua dintre distinctiile primite de eveniment, despre care au scris BBC, CNBC, Time sau The Guardian.De-a lungul celor patru zile de festival, au participat, în medie, peste 75.000 de oameni pe zi. Alaturi de Armin van Buuren,Avicii, David Guetta, ATB, Dimitri Vegas si Like Mike şi Tom Odell, au mai urcat pe scenă alţi 150 de artişti. 15% din totalul de participanţi au fost turişti străini, topul vânzărilor de bilete pe ţări conturându-se în felul următor: Marea Britanie, Germania, SUA, Canada, Franţa, Italia, Ungaria, Austria, Moldova, Olanda, Danemarca, Japonia.</string>
+    <string name="DescriptionString">Description</string>
+    <string name="google_pay_status_checking" translatable="false">Checking if Google Pay is available...</string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for %s!</string>
+    <string name="google_pay_status_unavailable" translatable="false">Unfortunately, Google Pay is not available on this phone.</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color1"
+    android:backgroundTint="@color/color1">
+
+    <ImageView
+        android:id="@+id/festival_image_id"
+        android:layout_width="399dp"
+        android:layout_height="189dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/festival" />
+
+    <Button
+        android:id="@+id/festival_edit_button_id"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/button_rounded_corners"
+        android:text="Edit"
+        app:backgroundTint="@color/color2"
+        app:layout_constraintBottom_toBottomOf="@+id/festival_image_id"
+        app:layout_constraintEnd_toStartOf="@+id/festival_button_id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/festival_name_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/festival_button_id"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_rounded_corners"
+        android:text="@string/joinFestivalString"
+        app:backgroundTint="@color/color2"
+        app:layout_constraintBottom_toBottomOf="@+id/festival_image_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/festival_name_id"
+        android:layout_width="135dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="104dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/festival_image_id" />
+
+    <TextView
+        android:id="@+id/festival_date_id"
+        android:layout_width="150dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/festival_button_id"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/festival_name_id"
+        app:layout_constraintVertical_bias="0.388"
+        tools:ignore="TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

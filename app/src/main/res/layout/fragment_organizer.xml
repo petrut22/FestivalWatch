@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+        <variable
+            name="organizerViewModel"
+            type="com.example.festivalwatch.organizer.OrganizerViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".organizer.OrganizerFragment"
+        android:background="@color/color1">
+
+
+        <EditText
+            android:id="@+id/user_field_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:ems="8"
+            android:hint="Type User"
+            android:text="@={organizerViewModel._potentialOrganizer}"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/add_user_button_id"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="78dp"
+            android:background="@drawable/button_rounded_corners"
+            android:text="Add Organizer"
+            android:textSize="11dp"
+            android:onClick="@{() -> organizerViewModel.addOrganizer()}"
+            app:backgroundTint="@color/darkpink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/user_field_id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/festival_usernames_text_id"
+            android:layout_width="140dp"
+            android:layout_height="600dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="33dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="22"
+            android:text="@={organizerViewModel.usersAll}"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_field_id"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/festival_admin_text_id"
+            android:layout_width="100dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="33dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="22"
+            android:text="@={organizerViewModel.adminValues}"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/festival_usernames_text_id"
+            app:layout_constraintTop_toBottomOf="@+id/add_user_button_id"
+            tools:ignore="TextSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

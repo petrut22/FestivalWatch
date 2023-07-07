@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_main"
+        android:icon="@drawable/ic_menu"
+        android:title="Search"
+        app:showAsAction="always" >
+
+        <menu>
+            <item android:id="@+id/logout_item"
+                android:icon="@drawable/ic_logout"
+                android:title="logout"
+                app:showAsAction="always"/>
+            <item android:id="@+id/about_item"
+                android:icon="@drawable/ic_lightbulb"
+                android:title="about"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+</menu>
